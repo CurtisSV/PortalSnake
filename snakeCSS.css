@@ -1,0 +1,18 @@
+body {
+	/*background-color: 000000;*/
+}
+
+.mainTable {
+	position: fixed;
+	left: 25%;
+}
+
+#title {
+	position: fixed;
+	left: 43%;
+	color: red;
+}
+
+.head {
+	color: blue;
+}

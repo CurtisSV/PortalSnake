@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'jquery-1.9.1.js' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'jquery-1.9.1.js', null ]
+5 verbose cache add name=undefined spec="jquery-1.9.1.js" args=["jquery-1.9.1.js",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'jquery-1.9.1.js',
+6 verbose parsed url   path: 'jquery-1.9.1.js',
+6 verbose parsed url   href: 'jquery-1.9.1.js' }
+7 silly lockFile d48585c7-jquery-1-9-1-js jquery-1.9.1.js
+8 verbose lock jquery-1.9.1.js /Users/curtis/.npm/d48585c7-jquery-1-9-1-js.lock
+9 verbose chmod /var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz 644
+10 verbose tar unpack /var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz
+11 silly lockFile 0dd52eb4-6726-0-24753978359512985-package tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/package
+12 verbose lock tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/package /Users/curtis/.npm/0dd52eb4-6726-0-24753978359512985-package.lock
+13 silly lockFile 2b54f8a9-6726-0-24753978359512985-tmp-tgz tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz
+14 verbose lock tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz /Users/curtis/.npm/2b54f8a9-6726-0-24753978359512985-tmp-tgz.lock
+15 silly gunzTarPerm modes [ '755', '644' ]
+16 error not a package /var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz
+17 silly lockFile 0dd52eb4-6726-0-24753978359512985-package tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/package
+18 silly lockFile 0dd52eb4-6726-0-24753978359512985-package tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/package
+19 silly lockFile 2b54f8a9-6726-0-24753978359512985-tmp-tgz tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz
+20 silly lockFile 2b54f8a9-6726-0-24753978359512985-tmp-tgz tar:///var/folders/79/m4zp1b252sl8fcrsy0jk95cr0000gn/T/npm-17145-uu1eZ-B1/1405646386726-0.24753978359512985/tmp.tgz
+21 silly lockFile d48585c7-jquery-1-9-1-js jquery-1.9.1.js
+22 silly lockFile d48585c7-jquery-1-9-1-js jquery-1.9.1.js
+23 verbose addNamed [ 'jquery-1.9.1.js', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 1c3d11af-jquery-1-9-1-js jquery-1.9.1.js@
+26 verbose lock jquery-1.9.1.js@ /Users/curtis/.npm/1c3d11af-jquery-1-9-1-js.lock
+27 silly addNameRange { name: 'jquery-1.9.1.js', range: '*', hasData: false }
+28 verbose url raw jquery-1.9.1.js
+29 verbose url resolving [ 'https://registry.npmjs.org/', './jquery-1.9.1.js' ]
+30 verbose url resolved https://registry.npmjs.org/jquery-1.9.1.js
+31 info trying registry request attempt 1 at 21:19:46
+32 http GET https://registry.npmjs.org/jquery-1.9.1.js
+33 http 404 https://registry.npmjs.org/jquery-1.9.1.js
+34 silly registry.get cb [ 404,
+34 silly registry.get   { date: 'Fri, 18 Jul 2014 01:19:47 GMT',
+34 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+34 silly registry.get     'content-type': 'application/json',
+34 silly registry.get     'cache-control': 'max-age=0',
+34 silly registry.get     'content-length': '52',
+34 silly registry.get     'accept-ranges': 'bytes',
+34 silly registry.get     via: '1.1 varnish',
+34 silly registry.get     age: '0',
+34 silly registry.get     'x-served-by': 'cache-dfw1831-DFW',
+34 silly registry.get     'x-cache': 'MISS',
+34 silly registry.get     'x-cache-hits': '0',
+34 silly registry.get     'x-timer': 'S1405646387.617269,VS0,VE51',
+34 silly registry.get     'keep-alive': 'timeout=10, max=50',
+34 silly registry.get     connection: 'Keep-Alive' } ]
+35 silly lockFile 1c3d11af-jquery-1-9-1-js jquery-1.9.1.js@
+36 silly lockFile 1c3d11af-jquery-1-9-1-js jquery-1.9.1.js@
+37 error 404 'jquery-1.9.1.js' is not in the npm registry.
+37 error 404 You should bug the author to publish it
+37 error 404
+37 error 404 Maybe try 'npm search jquery 1 9 1'
+37 error 404
+37 error 404 Note that you can also install from a
+37 error 404 tarball, folder, or http url, or git url.
+38 error System Darwin 13.3.0
+39 error command "node" "/usr/local/bin/npm" "install" "jquery-1.9.1.js"
+40 error cwd /Users/curtis/Desktop/PortalSnake-master
+41 error node -v v0.10.26
+42 error npm -v 1.4.3
+43 error code E404
+44 verbose exit [ 1, true ]

@@ -1,0 +1,94 @@
+<html>
+<head>
+<script src="jquery-1.9.1.js"></script>
+  <script src="underscore.js"></script>
+  <script src="keymaster.js"></script>
+  <script src="snake_server.js"></script>
+  <link href="snakeCSS.css" rel="stylesheet" type="text/css">
+  <!-- <script src="my_JQuery.js"></script> -->
+  <!--<script src="app.js"></script>-->
+  <style>
+
+    body {
+      background-color: black; 
+    }
+  	td {
+  		width: 20px;
+  		height: 20px;
+  		background-color: grey;
+  	}
+
+  	td.snake {
+  		background-color: brown;
+  	}
+  	td.blue {
+  		background-color: red;
+  	}
+  	td.red {
+  		background-color: red;
+  	}
+    td.head {
+      background-color: black;
+    }
+    .mainTable {
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: auto;
+    }
+
+    
+  </style>
+  
+</head>
+
+
+
+
+<body>
+
+  <table class='mainTable'>
+  </table>
+
+  <script type="text/javascript" >
+  /*
+  1. Initialize the grid. 
+  2. Update the game. 
+  3. Generate 
+
+  */
+  var game = new Game();
+  	//initialize the grid
+  	for(var i = 0; i < game.grid.length; i++){
+
+  		$("table").append("<tr id='tr" + i+ "'></tr>"); // insert a table row.
+  		for(var j = 0; j<game.grid.length; j++){
+  			$("#tr"+ i).append("<td id='r" + i + "c" + j + "'>" + ""+  "</td>");
+  		}
+  	}
+  	_.each(game.snake.tail, function(coord){
+  		$("#c" + coord.join("")).addClass("snake");
+  	});
+  	
+  	setInterval(function(){
+  		game.step();
+  		appleCoord = game.powerUp;
+  		console.log(appleCoord);
+  		$("#r" + appleCoord[0] + "c" + appleCoord[1]).addClass("blue");
+  		//game.snake.dir = "south";
+  		$(".snake").removeClass("snake blue");
+
+  		_.each(game.snake.tail, function(coord){
+  			$("#r" + coord[0] + "c" + coord[1]).addClass("snake").removeClass("head"); 
+  		});
+      var head = game.snake.tail[0]; 
+      $("#r" + head[0] + "c" + head[1]).addClass("head");
+  	}, 1000/10);
+
+
+  	//$("#content").html(game.render());
+  </script>
+
+  
+</body>
+</html>
